@@ -1,9 +1,12 @@
 {
-    "name": "Swap List",
-    "logoURI": "https://testnet.bscscan.com/images/main/empty-token.png",
-    "keywords": ["swap", "defi"],
-    "timestamp": "2021-04-15T12:00:00.000+00:00",
-    "tokens": [
+  "name": "Nimbus Swap List",
+  "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/nimbus.jpg",
+  "keywords": [
+    "nimbus",
+    "defi"
+  ],
+  "timestamp": "2021-04-15T12:00:00.000+00:00",
+  "tokens": [
       {
         "chainId": 97,
         "address": "0x5009a62f0687EFa610DC4eB58985f2FA32Fcb0F0",
