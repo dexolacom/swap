@@ -1,7 +1,7 @@
 {
     "name": "Swap List",
-    "logoURI": "https://testnet.bscscan.com/images/main/empty-token.png",
-    "keywords": ["swap", "defi"],
+    "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/busd.png",
+    "keywords": ["nimbus", "defi"],
     "timestamp": "2021-04-15T12:00:00.000+00:00",
     "tokens": [
       {
@@ -10,7 +10,7 @@
         "name": "TechBand Token",
         "symbol": "TBT",
         "decimals": 18,
-        "logoURI": "https://testnet.bscscan.com/images/main/empty-token.png"
+        "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/busd.png"
       },
       {
         "chainId": 97,
@@ -18,7 +18,7 @@
         "name": "Wrapped BNB (WBNB)",
         "symbol": "WBNB",
         "decimals": 18,
-        "logoURI": "https://testnet.bscscan.com/images/main/empty-token.png"
+        "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/busd.png"
       },
       {
         "chainId": 97,
