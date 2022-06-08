@@ -728,22 +728,6 @@
         "decimals": 6,
         "logoURI": "https://raw.githubusercontent.com/compound-finance/token-list/master/assets/asset_USDC.svg"
       },
-      {
-        "chainId": 97,
-        "address": "0x5f20559235479F5B6abb40dFC6f55185b74E7b55",
-        "name": "Nimbus",
-        "symbol": "NBU",
-        "decimals": 18,
-        "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/nimbus.jpg"
-      },
-      {
-        "chainId": 97,
-        "address": "0xA4d872235dde5694AF92a1d0df20d723E8e9E5fC",
-        "name": "Nimbus Governance Token",
-        "symbol": "GNBU",
-        "decimals": 18,
-        "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/gnbu.jpg"
-      },
         {
         "chainId": 97,
         "address": "0x5009a62f0687EFa610DC4eB58985f2FA32Fcb0F0",
@@ -751,14 +735,6 @@
         "symbol": "TBT",
         "decimals": 18,
         "logoURI": "https://testnet.bscscan.com/images/main/empty-token.png"
-      },
-      {
-        "chainId": 97,
-        "address": "0x8f19d1A7596F5c81ce01718f395C640908990536",
-        "name": "BUSD",
-        "symbol": "BUSD",
-        "decimals": 18,
-        "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/busd.png"
       },
       {
         "chainId": 56,
