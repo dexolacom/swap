@@ -753,6 +753,14 @@
         "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/busd.png"
       },
       {
+        "chainId": 97,
+        "address": "0x5009a62f0687EFa610DC4eB58985f2FA32Fcb0F0",
+        "name": "TechBand Token",
+        "symbol": "TBT",
+        "decimals": 18,
+        "logoURI": "https://testnet.bscscan.com/images/main/empty-token.png"
+      },
+      {
         "chainId": 56,
         "address": "0x5f20559235479F5B6abb40dFC6f55185b74E7b55",
         "name": "Nimbus",
