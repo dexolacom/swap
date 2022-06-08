@@ -109,7 +109,7 @@
         "symbol": "BUSD",
         "decimals": 18,
         "logoURI": "https://raw.githubusercontent.com/nimbus-devs/token-lists/master/busd.png"
-      }
+      },
     {
       "chainId": 56,
       "address": "0x5f20559235479F5B6abb40dFC6f55185b74E7b55",
