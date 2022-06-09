@@ -9,12 +9,10 @@ import portisIcon from '../assets/images/portisIcon.png'
 
 import { fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 
-export const ROUTER_ADDRESS = process.env.REACT_APP_ROUTER_CONTRACT || ''
-
 export const BSC_OR_ETH = {
   //ROUTER_BSC: '0x7F3aF0D4572180055ceDFf580422e0D8AfE7Cddc',
   ROUTER_BSC:'0xb285314255198920A9458cf0dc4720d1AA8926CF',
-  ROUTER_ALL: process.env.REACT_APP_ROUTER_CONTRACT || '',
+  ROUTER_ALL: process.env.REACT_APP_ROUTER_CONTRACT || '0xb285314255198920A9458cf0dc4720d1AA8926CF',
   BSC_LOGO:'https://cryptologos.cc/logos/binance-coin-bnb-logo.svg',
   BSC_TESTSCAN:'https://testnet.bscscan.com',
   BSC_MAINSCAN:'https://bscscan.com',
@@ -28,11 +26,6 @@ export const EMPTY_BYTES = '0x00000000000000000000000000000000000000000000000000
 export const MAX_VALUE = '115792089237316195423570985008687907853269984665640564039457584007913129639935'
 
 export { PRELOADED_PROPOSALS } from './proposals'
-
-// a list of tokens by chain
-type ChainTokenList = {
-  readonly [chainId in ChainId]: Token[]
-}
 
 export const NBU = new Token(ChainId.MAINNET, process.env.REACT_APP_NBU_TOKEN_CONTRACT || '0xEB58343b36C7528F23CAAe63a150240241310049', 18, 'NBU', 'Nimbus')
 //export const NBU = new Token(ChainId.MAINNET, '0x5f20559235479F5B6abb40dFC6f55185b74E7b55', 18, 'NBU', 'Nimbus')
@@ -86,7 +79,17 @@ export const MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
   [ChainId.MAINNET]: '0x090D4613473dEE047c3f2706764f49E0821D256e'
 }
 
-const WETH_ONLY: ChainTokenList = {
+const WETH_ONLY: { [chainId in ChainId]: any } = {
+  [ChainId.MAINNET]: [new Token(ChainId.BSC_TESTNET, '0x2EA45A6702f78d1BAa2e11c6ABdaCDD22583cBa0', 18, 'WBNB', 'WBNB')],
+  [ChainId.ROPSTEN]: [new Token(ChainId.BSC_TESTNET, '0x2EA45A6702f78d1BAa2e11c6ABdaCDD22583cBa0', 18, 'WBNB', 'WBNB')],
+  [ChainId.RINKEBY]: [new Token(ChainId.BSC_TESTNET, '0x2EA45A6702f78d1BAa2e11c6ABdaCDD22583cBa0', 18, 'WBNB', 'WBNB')],
+  [ChainId.GÖRLI]: [new Token(ChainId.BSC_TESTNET, '0x2EA45A6702f78d1BAa2e11c6ABdaCDD22583cBa0', 18, 'WBNB', 'WBNB')],
+  [ChainId.KOVAN]: [new Token(ChainId.BSC_TESTNET, '0x2EA45A6702f78d1BAa2e11c6ABdaCDD22583cBa0', 18, 'WBNB', 'WBNB')],
+  [ChainId.BSC_TESTNET]: [new Token(ChainId.BSC_TESTNET, '0x2EA45A6702f78d1BAa2e11c6ABdaCDD22583cBa0', 18, 'WBNB', 'WBNB')],
+  [ChainId.BSC_MAINNET]: [new Token(ChainId.BSC_MAINNET, '0x2EA45A6702f78d1BAa2e11c6ABdaCDD22583cBa0', 18, 'WBNB', 'WBNB')],
+}
+
+/* const WETH_ONLY1: any = {
   [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
   [ChainId.ROPSTEN]: [WETH[ChainId.ROPSTEN]],
   [ChainId.RINKEBY]: [WETH[ChainId.RINKEBY]],
@@ -94,10 +97,10 @@ const WETH_ONLY: ChainTokenList = {
   [ChainId.KOVAN]: [WETH[ChainId.KOVAN]],
   [ChainId.BSC_TESTNET]: [WETH[ChainId.BSC_TESTNET]],
   [ChainId.BSC_MAINNET]: [WETH[ChainId.BSC_MAINNET]]
-}
+} */
 
 // used to construct intermediary pairs for trading
-export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
+export const BASES_TO_CHECK_TRADES_AGAINST: any = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], NBU, DAI, USDT]
 }
@@ -113,19 +116,19 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 }
 
 // used for display in the default list when adding liquidity
-export const SUGGESTED_BASES: ChainTokenList = {
+export const SUGGESTED_BASES: any = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, USDT, NBU, GNBU[ChainId.MAINNET]]
 }
 
 // used for display in the default list when swap
-export const SUGGESTED_BASES_SWAP: ChainTokenList = {
+export const SUGGESTED_BASES_SWAP: any = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], NBU, GNBU[ChainId.MAINNET]]
 }
 
 // used to construct the list of all pairs we consider by default in the frontend
-export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
+export const BASES_TO_TRACK_LIQUIDITY_FOR: any = {
   ...WETH_ONLY,
   [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], DAI, USDT]
 }

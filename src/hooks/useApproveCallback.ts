@@ -3,7 +3,6 @@ import { TransactionResponse } from '@ethersproject/providers'
 // import { Trade, TokenAmount, CurrencyAmount, ETHER, ChainId } from 'nimbus-swap-mod/sdk'
 import { Trade, TokenAmount, CurrencyAmount, ETHER } from 'nimbus-swap-mod/sdk'
 import { useCallback, useMemo } from 'react'
-// import { ROUTER_ADDRESS } from '../constants'
 import { useTokenAllowance } from '../data/Allowances'
 import { getTradeVersion, useV1TradeExchangeAddress } from '../data/V1'
 import { Field } from '../state/swap/actions'
@@ -108,6 +107,4 @@ export function useApproveCallbackFromTrade(trade?: Trade, allowedSlippage = 0) 
   const { chainId } = useActiveWeb3React()
   const SELECTED_ROUTER = (chainId == 97 || chainId == 56) ? BSC_OR_ETH.ROUTER_BSC : BSC_OR_ETH.ROUTER_ALL
   return useApproveCallback(amountToApprove, tradeIsV1 ? v1ExchangeAddress : SELECTED_ROUTER)
-
-  //return useApproveCallback(amountToApprove, tradeIsV1 ? v1ExchangeAddress : ROUTER_ADDRESS)
 }

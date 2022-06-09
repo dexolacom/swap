@@ -1,27 +1,11 @@
-export type TContractVariant = 'nbu' | 'gnbu' | 'router' | 'initialSale' | 'wrapNBU' | 'wrapGNBU'
+export type TContractVariant = 'router'
 
 export type TContracts = {
-  nbu: string
-  gnbu: string
   router: string
-  routerTest?: string
-  initialSale: string
-  wrapNBU: string
-  wrapGNBU: string
-  wrapNBUTest?: string
-  wrapGNBUTest?: string
 }
 
 export type TAbi = {
-  nbu: any
-  gnbu: any
   router: any
-  routerTest?: any
-  initialSale: any
-  wrapNBU: any
-  wrapGNBU: any
-  wrapNBUTest?: any
-  wrapGNBUTest?: any
 }
 
 export type TWeb3ContractContext = {

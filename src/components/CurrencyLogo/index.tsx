@@ -55,7 +55,7 @@ const getTokenLogoURL = (address: string) => {
       // case '0xA2CA18FC541B7B101c64E64bBc2834B05066248b':
       return wbtcIcon
 
-    case '0xA2CA18FC541B7B101c64E64bBc2834B05066248b':
+    case '0x2EA45A6702f78d1BAa2e11c6ABdaCDD22583cBa0':
       return bnbIcon
 
     case '0x6B175474E89094C44Da98b954EedeAC495271d0F':

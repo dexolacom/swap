@@ -4,7 +4,6 @@ import { AddressZero } from '@ethersproject/constants'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import { BigNumber } from '@ethersproject/bignumber'
 import { abi as IUniswapV2Router02ABI } from 'nimbus-swap-mod/v2-periphery/build/IUniswapV2Router02.json'
-// import { ROUTER_ADDRESS } from '../constants'
 import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER } from 'nimbus-swap-mod/sdk'
 import { TokenAddressMap } from '../state/lists/hooks'
 
