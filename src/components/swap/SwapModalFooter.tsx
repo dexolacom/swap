@@ -93,7 +93,7 @@ export default function SwapModalFooter({
           <RowFixed>
             <Text fontSize="14px">Liquidity Provider Fee</Text>
             <QuestionHelper
-              text='For each trade a 0.2% fee is paid. 0.17% goes to liquidity providers and 0.03% goes to the PancakeSwap treasury.'
+              text='A portion of each trade (0.30%) goes to liquidity providers as a protocol incentive.'
             />
           </RowFixed>
           <Text fontSize="14px">

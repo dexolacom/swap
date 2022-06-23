@@ -115,6 +115,7 @@ export default function RemoveLiquidity({
 
     const deadlineForSignature: number = Math.ceil(Date.now() / 1000) + deadline
 
+
     const EIP712Domain = [
       { name: 'name', type: 'string' },
       { name: 'version', type: 'string' },
@@ -122,7 +123,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' },
     ]
     const domain = {
-      name: 'Pancake LPs',
+      name: 'Swap LPs',
       version: '1',
       chainId,
       verifyingContract: pair.liquidityToken.address,
