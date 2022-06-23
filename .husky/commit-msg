@@ -6,4 +6,3 @@ if ! grep -qE "$commitRegex" "$1"; then
     echo "You can use: FIX | ADD | EDIT | REF | CLEAR + '|' + [text]"
     exit 1
 fi
-
