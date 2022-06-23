@@ -27,4 +27,3 @@ if [ $result -ne 0 ]; then
     echo "Aborting commit due to denied words"
     exit $result
 fi
-
